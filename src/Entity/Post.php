@@ -14,7 +14,7 @@ class Post {
         return $this->id;
     }
     
-    public function setId(int $id): self
+    public function setId(int $id)
     {
         return $this->id;
     }
@@ -51,6 +51,18 @@ class Post {
     public function setUser($user)
     {
         $this->user = $user;
+
+        return $this;
+    }
+
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    public function setImage($image)
+    {
+        $this->image = $image;
 
         return $this;
     }
